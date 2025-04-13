@@ -9,6 +9,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -16,4 +17,8 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+.form-input {
+  @apply p-3 rounded-sm w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
