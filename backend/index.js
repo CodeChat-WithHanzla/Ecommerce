@@ -7,7 +7,7 @@ import cors from "cors";
 // Routes imports
 
 import userRoutes from "./routes/userRoutes.js";
-
+import categoryRoutes from "./routes/categoryRoutes.js";
 // Configurations
 
 dotenv.config();
@@ -35,3 +35,4 @@ app.get("/", (req, res) => {
 
 // Routes for users
 app.use("/api/users", userRoutes);
+app.use("/api/category", categoryRoutes);
