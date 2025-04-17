@@ -14,6 +14,7 @@ import Profile from './pages/User/Profile.jsx'
 // Admin Routes
 import AdminRoute from './pages/Admin/AdminRoute.jsx'
 import UserList from './pages/Admin/UserList.jsx'
+import CategoryList from './pages/Admin/CategoryList.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
@@ -28,7 +29,8 @@ createRoot(document.getElementById('root')).render(
           </Route>
           {/* Protected route for admin*/}
           <Route path='/admin' element={<AdminRoute />}>
-            <Route path='/admin/userlist' element={<UserList />} />
+            <Route path='userlist' element={<UserList />} />
+            <Route path='categorylist' element={<CategoryList />} />
           </Route>
         </Route>
 
